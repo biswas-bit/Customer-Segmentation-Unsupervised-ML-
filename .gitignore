@@ -1,2 +1,6 @@
 venv/
 datasets/
+*.pyc
+__pycache__/
+logs/
+.env
