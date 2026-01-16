@@ -1,4 +1,4 @@
-#Customer Segmentation Analysis Report
+# Customer Segmentation Analysis Report
 ---
 ## 1.Project Overview
 The goal of this analysis was to segment customers based on their Annual Income and Spending Score using an unsupervised machine learning approach. By identifying distinct groups, we can tailor marketing strategies and improve customer retention.
