@@ -36,3 +36,7 @@ The goal of this analysis was to segment customers based on their Annual Income 
 |   4 & 5 | Aspirational Spenders | 0.7×         | 1.2×           | Value: Trend-driven marketing and entry-level luxury      |
 |       2 | Budget-Conscious      | 0.8×         | 0.8×           | Price: Seasonal clearances and discount-focused campaigns |
 |       3 | Core Customers        | Average      | Average        | Stability: Standard updates and consistent service        |
+
+## 5.Mathematical Context
+The clusters were defined by minimizing the distance between data points and their respective centroids. The Inertia (WCSS) formula used by the model is:$$\text{Inertia} = \sum_{i=1}^{n} (x_i - \mu_{C_i})^2$$
+Where:$x_i$ is the data point.$\mu_{C_i}$ is the centroid of the cluster assigned to $x_i$.
