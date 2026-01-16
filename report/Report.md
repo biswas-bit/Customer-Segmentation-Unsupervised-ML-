@@ -38,5 +38,13 @@ The goal of this analysis was to segment customers based on their Annual Income 
 |       3 | Core Customers        | Average      | Average        | Stability: Standard updates and consistent service        |
 
 ## 5.Mathematical Context
-The clusters were defined by minimizing the distance between data points and their respective centroids. The Inertia (WCSS) formula used by the model is:$$\text{Inertia} = \sum_{i=1}^{n} (x_i - \mu_{C_i})^2$$
-Where:$x_i$ is the data point.$\mu_{C_i}$ is the centroid of the cluster assigned to $x_i$.
+The clusters were formed by minimizing the within-cluster sum of squares (WCSS):
+
+$$
+\text{Inertia} = \sum_{i=1}^{n} \left\| x_i - \mu_{C_i} \right\|^2
+$$
+
+Where:
+- $x_i$ represents the i-th data point  
+- $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
+- $n$ is the number of samples
