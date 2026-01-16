@@ -10,7 +10,8 @@ The goal of this analysis was to segment customers based on their Annual Income 
 * **Profiling**: Clusters were labeled by comparing each group's mean feature values against the global average of the dataset.
 
 ## 3.Final Cluster Mapping
-  '''python
+  ```python
+  
   mapping_dict = {
     0: 'VIP Champions',
     1: 'Elite Champions',
@@ -23,5 +24,5 @@ The goal of this analysis was to segment customers based on their Annual Income 
  } 
 
   df['Cluster_Name'] = df['Cluster'].map(mapping_dict)
-'''
+  ```
 
