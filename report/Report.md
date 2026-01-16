@@ -8,3 +8,20 @@ The goal of this analysis was to segment customers based on their Annual Income 
 * **Optimal Clusters ($k$)**: Determined to be 8 using the Elbow Method (minimizing Within-Cluster Sum of Squares).
 * **Feature Scaling**: Data was normalized before clustering to ensure income and spending scores were weighted equally.
 * **Profiling**: Clusters were labeled by comparing each group's mean feature values against the global average of the dataset.
+
+## 3.Final Cluster Mapping
+  '''python
+  mapping_dict = {
+    0: 'VIP Champions',
+    1: 'Elite Champions',
+    2: 'Budget-Conscious',
+    3: 'Core Customers',
+    4: 'Loyal Super-Fans',
+    5: 'Aspirational Spenders',
+    6: 'Loyal Enthusiasts',
+    7: 'Brand Ambassadors'
+ } 
+
+  df['Cluster_Name'] = df['Cluster'].map(mapping_dict)
+'''
+
