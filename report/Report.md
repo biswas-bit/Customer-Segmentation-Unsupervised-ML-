@@ -48,3 +48,6 @@ Where:
 - $x_i$ represents the i-th data point  
 - $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
 - $n$ is the number of samples
+
+## 6.Conclusion
+Clusters 1, 7, and 0 represent the most profitable segments, contributing significantly more than the average customer. Conversely, Clusters 4 and 5 show high brand engagement despite lower income levels, representing a strong "aspirational" market that values the brand deeply.
