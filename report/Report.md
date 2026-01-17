@@ -52,7 +52,7 @@ Where:
 
 ![Elbow Curve for K-Means](../report/images/elbow_method.png)
 
-##For DBSCAN I used k distance graph
+## For DBSCAN I Used k-distance Graph
  
 
 ## 6.Model COmparison & Validation
