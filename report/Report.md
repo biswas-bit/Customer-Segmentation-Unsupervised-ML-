@@ -2,6 +2,7 @@
 ---
 ## 1.Project Overview
 The goal of this analysis was to segment customers based on their Annual Income and Spending Score using an unsupervised machine learning approach. By identifying distinct groups, we can tailor marketing strategies and improve customer retention.
+---
 
 ## 2.Methodology
 * **Algorithm**: K-Means Clustering, DBSCAN.
@@ -9,6 +10,7 @@ The goal of this analysis was to segment customers based on their Annual Income 
 * **Optimal Eps  ($k$)**: I used Distance Plot to find best eps for clustering.
 * **Feature Scaling**: Data was normalized before clustering to ensure income and spending scores were weighted equally.
 * **Profiling**: Clusters were labeled by comparing each group's mean feature values against the global average of the dataset.
+---
 
 ## 3.Final Cluster Mapping
   ```python
@@ -26,7 +28,7 @@ The goal of this analysis was to segment customers based on their Annual Income 
 
   df['Cluster_Name'] = df['Cluster'].map(mapping_dict)
   ```
-
+---
 ## 4.Segment Profiles & Strategic Insights
 
 | Cluster | Persona               | Income Level | Spending Level | Strategic Action                                          |
@@ -37,7 +39,7 @@ The goal of this analysis was to segment customers based on their Annual Income 
 |   4 & 5 | Aspirational Spenders | 0.7×         | 1.2×           | Value: Trend-driven marketing and entry-level luxury      |
 |       2 | Budget-Conscious      | 0.8×         | 0.8×           | Price: Seasonal clearances and discount-focused campaigns |
 |       3 | Core Customers        | Average      | Average        | Stability: Standard updates and consistent service        |
-
+---
 ## 5.Mathematical Context(Elbow Method)
 The clusters were formed by minimizing the within-cluster sum of squares (WCSS):
 
@@ -62,6 +64,7 @@ The k-distance graph was used to identify the optimal value of ε by locating th
   <em>Figure: k-Distance plot highlighting the elbow point used to determine ε</em>
 </p>
 
+---
 
 ## 6.Model Comparison & Validation
 Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
@@ -72,6 +75,7 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
 
 **Analysis:** While DBSCAN is effective at identifying noise/outliers, it struggled to partition the dense central customer cloud into actionable segments. K-Means provided a significantly higher Silhouette Score and more granular business categories.
 
+---
 ## 7. Conclusion
   The analysis identifies three primary tiers of customers:
 
@@ -80,6 +84,7 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
   * **The Aspirational Tier (Clusters 4, 5, 6):** Mid-to-low income but high spending relative to their means. These are "brand-obsessed" customers who respond well to community and trends.
 
   * **The Stable/Economic Tier (Clusters 2, 3):** Standard customers who prioritize value.
+---
 
 ## 8. Cluster Comparison: K-Means vs DBSCAN
 
