@@ -81,5 +81,13 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
 
   * **The Stable/Economic Tier (Clusters 2, 3):** Standard customers who prioritize value.
 
+## 8. clusters Comparision
+
+   ![k-Means Clusters ](../report/images/cluster_k_means.png)
+
+
+   ![k-Means Clusters ](../report/images/dbscan_cluster.png)
+   
+
   By utilizing the K-Means results (Score: 0.521), the marketing department can now deploy targeted email flows for each of the 8 identified personas, maximizing ROI and reducing churn.
   ---
