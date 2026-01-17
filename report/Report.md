@@ -52,10 +52,11 @@ Where:
 
 ![Elbow Curve for K-Means](../report/images/elbow_method.png)
 
-## For DBSCAN I Used k-distance Graph
+## For DBSCAN I Used k-distance Graph For Optimal Eps Value
+![K-Distance Plot for DBSCAN ](../report/images/k_distance_graph.png)
  
 
-## 6.Model COmparison & Validation
+## 6.Model Comparison & Validation
 Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
 | Algorithm | Number of Clusters | Silhouette Score | Status         |
 | --------- | ------------------ | ---------------- | -------------- |
