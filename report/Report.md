@@ -49,6 +49,7 @@ Where:
 - $x_i$ represents the i-th data point  
 - $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
 - $n$ is the number of samples
+
 ![Elbow Curve for K-Means](report\images\elbow_method.png)
 
 ## 6.Model COmparison & Validation
