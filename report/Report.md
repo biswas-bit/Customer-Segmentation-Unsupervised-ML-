@@ -50,5 +50,11 @@ Where:
 - $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
 - $n$ is the number of samples
 
-## 6.Conclusion
-Clusters 1, 7, and 0 represent the most profitable segments, contributing significantly more than the average customer. Conversely, Clusters 4 and 5 show high brand engagement despite lower income levels, representing a strong "aspirational" market that values the brand deeply.
+## 6.Model COmparison & Validation
+Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
+| Algorithm | Number of Clusters | Silhouette Score | Status         |
+| --------- | ------------------ | ---------------- | -------------- |
+| K-Means   | 8                  | 0.521            | Selected Model |
+| DBSCAN    | 2 (+ Noise)        | 0.417            | Evaluated      |
+**Analysis:** While DBSCAN is effective at identifying noise/outliers, it struggled to partition the dense central customer cloud into actionable segments. K-Means provided a significantly higher Silhouette Score and more granular business categories.
+
