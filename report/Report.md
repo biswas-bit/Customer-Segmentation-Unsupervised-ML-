@@ -56,5 +56,6 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
 | --------- | ------------------ | ---------------- | -------------- |
 | K-Means   | 8                  | 0.521            | Selected Model |
 | DBSCAN    | 2 (+ Noise)        | 0.417            | Evaluated      |
+
 **Analysis:** While DBSCAN is effective at identifying noise/outliers, it struggled to partition the dense central customer cloud into actionable segments. K-Means provided a significantly higher Silhouette Score and more granular business categories.
 
