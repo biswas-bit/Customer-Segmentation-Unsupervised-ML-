@@ -59,3 +59,13 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
 
 **Analysis:** While DBSCAN is effective at identifying noise/outliers, it struggled to partition the dense central customer cloud into actionable segments. K-Means provided a significantly higher Silhouette Score and more granular business categories.
 
+## 7. Conclusion
+  The analysis identifies three primary tiers of customers:
+
+  * **The Power Tier (Clusters 0, 1, 7):** High-income individuals with high brand loyalty. They represent the "Pareto 20%" that likely drives the majority of revenue.
+
+  * **The Aspirational Tier (Clusters 4, 5, 6):** Mid-to-low income but high spending relative to their means. These are "brand-obsessed" customers who respond well to community and trends.
+
+  * **The Stable/Economic Tier (Clusters 2, 3):** Standard customers who prioritize value.
+    By utilizing the K-Means results (Score: 0.521), the marketing department can now deploy targeted email flows for each of the 8 identified personas, maximizing ROI and reducing churn.
+  ---
