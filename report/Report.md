@@ -50,7 +50,7 @@ Where:
 - $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
 - $n$ is the number of samples
 
-![Elbow Curve for K-Means](report\images\elbow_method.png)
+![Elbow Curve for K-Means](report/images/elbow_method.png)
 
 ## 6.Model COmparison & Validation
 Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
