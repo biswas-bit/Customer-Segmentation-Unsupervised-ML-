@@ -52,9 +52,16 @@ Where:
 
 ![Elbow Curve for K-Means](../report/images/elbow_method.png)
 
-## For DBSCAN I Used k-distance Graph For Optimal Eps Value
-![K-Distance Plot for DBSCAN ](../report/images/k_distance_graph.png)
- 
+### DBSCAN: Epsilon (ε) Selection Using k-Distance Graph
+
+The k-distance graph was used to identify the optimal value of ε by locating the point of maximum curvature (elbow), which separates dense regions from noise.
+
+<p align="center">
+  <img src="../report/images/k_distance_graph.png" width="600">
+  <br>
+  <em>Figure: k-Distance plot highlighting the elbow point used to determine ε</em>
+</p>
+
 
 ## 6.Model Comparison & Validation
 Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
