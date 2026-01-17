@@ -38,7 +38,7 @@ The goal of this analysis was to segment customers based on their Annual Income 
 |       2 | Budget-Conscious      | 0.8×         | 0.8×           | Price: Seasonal clearances and discount-focused campaigns |
 |       3 | Core Customers        | Average      | Average        | Stability: Standard updates and consistent service        |
 
-## 5.Mathematical Context
+## 5.Mathematical Context(Elbow Method)
 The clusters were formed by minimizing the within-cluster sum of squares (WCSS):
 
 $$
@@ -49,6 +49,7 @@ Where:
 - $x_i$ represents the i-th data point  
 - $\mu_{C_i}$ denotes the centroid of the cluster assigned to $x_i$  
 - $n$ is the number of samples
+![Elbow Curve for K-Means](report\images\elbow_method.png)
 
 ## 6.Model COmparison & Validation
 Two density-based and centroid-based algorithms were tested. The Silhouette Score was used as the primary metric to evaluate cluster separation and cohesion.
