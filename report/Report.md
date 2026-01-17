@@ -67,5 +67,6 @@ Two density-based and centroid-based algorithms were tested. The Silhouette Scor
   * **The Aspirational Tier (Clusters 4, 5, 6):** Mid-to-low income but high spending relative to their means. These are "brand-obsessed" customers who respond well to community and trends.
 
   * **The Stable/Economic Tier (Clusters 2, 3):** Standard customers who prioritize value.
-    By utilizing the K-Means results (Score: 0.521), the marketing department can now deploy targeted email flows for each of the 8 identified personas, maximizing ROI and reducing churn.
+
+  By utilizing the K-Means results (Score: 0.521), the marketing department can now deploy targeted email flows for each of the 8 identified personas, maximizing ROI and reducing churn.
   ---
